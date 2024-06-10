@@ -6,15 +6,16 @@ import Experience from './pages/Experience'
 import Project from './pages/Project'
 import Tools from './pages/Tools'
 import Footer from "./footer";
+import Home from "./pages/Home";
 function App() {
   return (
       <>
      
       
       <header>
-            <h1>Blasco</h1>
+            <h1><Link to="/">Blasco</Link></h1>
             <ul>
-                  <li><Link to="/"></Link></li>
+                  
                   <li><Link to="/about">About</Link></li>
                   <li><Link to="/education">Education</Link></li>
                   <li><Link to="/experience">Experience</Link></li>
@@ -29,7 +30,7 @@ function App() {
 
       
       <Routes>
-            <Route path="/" />
+            <Route path="/" element={<Home />} />
 
 
             <Route path="/about" element={<About/>}/>
