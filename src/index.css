@@ -4,6 +4,7 @@ a {
 }
 
 body {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -69,13 +70,54 @@ footer p {
   color: white;
 }
 
-/* responsive */
-
-@media (max-width: 800px) {
+/* responsive CELLPHONE */
+@media (max-width: 999px) {
+  /* Hide the navigation list in header */
   header ul {
     display: none;
   }
+
+  /* Hamburger menu icon */
   .hamburat {
     display: block !important;
+  }
+
+  /* Menu styles */
+  .menu,
+  .menuup {
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    transition: transform 0.5s ease;
+  }
+
+  /* Initial position of the menu */
+  .menuup {
+    transform: translateY(-100%);
+  }
+
+  /* Menu list styles */
+  .menu ul,
+  .menuup ul {
+    margin-top: 0;
+    list-style-type: none;
+    padding: 0 50px;
+  }
+
+  /* Menu list item styles */
+  .menu ul li,
+  .menuup ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* responsive DESKTOP */
+@media (min-width: 1000px) {
+  .menu,
+  .menuup {
+    display: none;
   }
 }

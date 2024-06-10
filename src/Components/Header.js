@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
+  const [display, setDisplay] = useState(false);
+
+  const displayMenu = () => {
+    setDisplay(!display);
+    console.log(display);
+  };
+
   return (
     <>
       <header>
@@ -30,8 +38,33 @@ function Header() {
           </li>
         </ul>
 
-        <MenuIcon className="hamburat" />
+        <MenuIcon className="hamburat" onClick={displayMenu} />
       </header>
+
+      {/* menubar */}
+
+      <aside className={`menu${!display ? "up" : ""}`}>
+        <ul>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/education">Education</Link>
+          </li>
+          <li>
+            <Link to="/experience">Experience</Link>
+          </li>
+          <li>
+            <Link to="/project">Project</Link>
+          </li>
+          <li>
+            <Link to="/tools">Tools</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </aside>
     </>
   );
 }
