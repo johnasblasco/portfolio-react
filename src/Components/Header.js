@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
   return (
@@ -7,6 +8,7 @@ function Header() {
         <h1>
           <Link to="/">Blasco</Link>
         </h1>
+
         <ul>
           <li>
             <Link to="/about">About</Link>
@@ -27,6 +29,8 @@ function Header() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
+
+        <MenuIcon className="hamburat" />
       </header>
     </>
   );

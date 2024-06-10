@@ -11,7 +11,6 @@ function Main() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-
       <Route path="/about" element={<About />} />
       <Route path="/education" element={<Education />} />
       <Route path="/experience" element={<Experience />} />

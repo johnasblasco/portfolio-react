@@ -1,104 +1,81 @@
 /* default style, root etc */
-a{
-      text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-
-body{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: monospace;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
 }
-
-
-
 
 /* HEADER */
-header{
-      padding: 0 50px;
-      display: flex;
-      justify-content: space-between;
+header {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header ul{
-      width: 500px;
-      justify-content: space-between;
-      display: flex;
-      list-style: none;
+header ul {
+  width: 500px;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
 }
-
-
-
-
-
+.hamburat {
+  display: none !important;
+  cursor: pointer;
+}
 
 /* MAIN */
-main{
-      height: 80vh;
-      
-}
-.home{
-      
+main {
+  height: 80vh;
 }
 
-.about{
-      background-color: rgb(211, 26, 26);
-
+.home {
 }
-.contact{
-      background-color: blueviolet;
+.about {
+  background-color: rgb(211, 26, 26);
 }
-.experience{
-      background-color: rgb(43, 226, 98);
+.contact {
+  background-color: blueviolet;
 }
-.tools{
-      background-color: rgb(226, 43, 89);
+.experience {
+  background-color: rgb(43, 226, 98);
 }
-.project{
-      background-color: rgb(223, 226, 43);
+.tools {
+  background-color: rgb(226, 43, 89);
 }
-.education{
-      background-color: rgb(46, 43, 226);
+.project {
+  background-color: rgb(223, 226, 43);
 }
-
-
-
-
-
-
-
-
-
+.education {
+  background-color: rgb(46, 43, 226);
+}
 
 /* FOOTER */
-footer{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: black;
-      height: 9.2vh;
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 9.2vh;
+  bottom: 0;
 }
-footer p{
-      margin: 0;
-      text-align: center;
-      color: white;
-
-     
-
+footer p {
+  margin: 0;
+  text-align: center;
+  color: white;
 }
-
-
-
-
-
-
-
-
 
 /* responsive */
 
-@media (max-width: 800px){
-      header ul {
-            display: none;
-      }
+@media (max-width: 800px) {
+  header ul {
+    display: none;
+  }
+  .hamburat {
+    display: block !important;
+  }
 }
