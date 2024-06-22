@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-
-import { Fade } from "react-awesome-reveal";
 function Header() {
   const [display, setDisplay] = useState(false);
 
@@ -19,7 +17,6 @@ function Header() {
         </h1>
                   
         <ul>
-        <Fade direction="up" cascade duration={1000}>
           <li>
             <Link to="/about">About</Link>
           </li>
@@ -38,7 +35,6 @@ function Header() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-          </Fade>
         </ul>
 
         <MenuIcon className="hamburat" onClick={displayMenu} />
