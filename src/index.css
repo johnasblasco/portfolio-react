@@ -1,9 +1,11 @@
 /* default style, root etc */
 a {
   text-decoration: none;
+  color: white;
 }
 
 body {
+  overflow-x: hidden;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -13,6 +15,7 @@ body {
 
 /* HEADER */
 header {
+  background-color: #AB3428;
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
@@ -20,10 +23,12 @@ header {
 }
 header ul {
   width: 500px;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
   list-style: none;
 }
+
+
 .hamburat {
   display: none !important;
   cursor: pointer;
@@ -31,13 +36,22 @@ header ul {
 
 /* MAIN */
 main {
+      padding: 0 50px;
   height: 80vh;
 }
 
 .home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     background: url('/public/bg.png') no-repeat;
+     background-size: cover;
+     background-position: center;
 }
+
+
 .about {
-  background-color: rgb(211, 26, 26);
+  background-color: #9ebaf5;
 }
 .contact {
   background-color: blueviolet;
@@ -57,17 +71,17 @@ main {
 
 /* FOOTER */
 footer {
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  height: 9.2vh;
-  bottom: 0;
+  background-color: #F5EE9E;
+  
 }
 footer p {
   margin: 0;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 /* responsive CELLPHONE */

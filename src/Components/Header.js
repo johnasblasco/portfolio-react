@@ -17,8 +17,8 @@ function Header() {
           <Link to="/">Blasco</Link>
         </h1>
 
-        <ul>
-          <li>
+        <ul className=" mt-3">
+          <li className>
             <Link to="/about">About</Link>
           </li>
           <li>

@@ -4,7 +4,7 @@ function footer() {
   return (
     <footer>
 
-     <p>&copy; All rights Reserved {new Date().getFullYear()}</p> 
+     <p>&copy; All rights Reserved by only creator JohnasBlasco {new Date().getFullYear()}</p> 
 
     </footer>
   )
