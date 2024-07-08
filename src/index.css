@@ -1,7 +1,7 @@
 /* default style, root etc */
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 a,button,img{
       cursor: pointer;
@@ -14,6 +14,7 @@ a,button,img{
       box-sizing: border-box;
       font-family: monospace;
       overflow-x: hidden;
+
 }
 
 
@@ -163,6 +164,7 @@ footer p {
   .menuup ul li {
     margin-bottom: 10px;
   }
+ 
 }
 
 /* responsive DESKTOP */
